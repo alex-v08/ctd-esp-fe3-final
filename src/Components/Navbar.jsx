@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {routes }  from './utils/routes' //Aqui deberan importar las rutas
 import { Switch, Route } from 'react-router-dom'
+import styles from './Navbar.module.css' //Aqui deberan importar los estilos
 
 
 
@@ -10,8 +11,9 @@ import { Switch, Route } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-      <header>
-      <a>DH Odonto</a>
+      <header className="sticky-top">
+      <a className={`navbar-brand ${styles.navbarBrand}` }
+      aria-label="Third navbar example">DH Odonto</a>
         <nav >
            
               
@@ -23,13 +25,9 @@ const Navbar = () => {
                 
                     <Link to={routes.contact}>Contact</Link>
                
-           
+                    <button>☀ 🌙{" "}</button>
         </nav>
       </header>
-
-
-
-
 
     )
 }
