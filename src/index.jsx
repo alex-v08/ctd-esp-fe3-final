@@ -9,7 +9,7 @@ import "./index.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
+//Recuerda configurar tus rutas y contexto aquí
 root.render(
   <React.StrictMode>
     <BrowserRouter>

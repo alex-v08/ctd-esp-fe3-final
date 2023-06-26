@@ -4,12 +4,11 @@ import axios from 'axios'
 import { useParams } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Detail = () => {
   const [data, setData] = useState([])
   const params = useParams();
-  // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
+
   useEffect(() => {
     axios.get(`https://jsonplaceholder.typicode.com/users/${params.id}`)
     .then(res => {
@@ -19,6 +18,8 @@ const Detail = () => {
   return (
     <>
       <h1>Detail Dentist {data.id} </h1>
+
+
       <Table striped bordered hover>
       <thead>
         <tr>

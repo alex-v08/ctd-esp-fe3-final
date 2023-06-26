@@ -1,6 +1,7 @@
 import React from "react";
+import { getFavFromStorage } from "../Components/utils/localStorage";
 import Card from "../Components/Card";
-import { getFavFromStorage } from "./Components/utils/localStorage.js";
+
 
 
 const Favs = () => {
