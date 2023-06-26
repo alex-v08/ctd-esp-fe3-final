@@ -1,21 +1,32 @@
-.navbarBrand {
-    font-size: 30px;
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
   }
   
-  .navbarBrand::first-letter {
-    color: #f21d1d;
+  .navbarBrand {
+    color: #ff0000; /* Color rojo para la primera letra de DH */
   }
   
   .navBarLink {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 9px;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    font-weight: 700;
+    display: flex;
   }
   
-  .btnStyle{
-    width: 3rem;
-    height: 3rem;
+  .navBarLink a {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 10px;
   }
+  
+  .navBarLink button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  

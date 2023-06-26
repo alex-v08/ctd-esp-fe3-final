@@ -1,36 +1,26 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import {routes }  from './utils/routes' //Aqui deberan importar las rutas
-import { Switch, Route } from 'react-router-dom'
-import styles from './Navbar.module.css' //Aqui deberan importar los estilos
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { routes } from './utils/routes';
+import { useContextGlobal } from './utils/global.context';
 
-
-
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
-
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
-    return (
-      <header className="sticky-top">
-      <a className={`navbar-brand ${styles.navbarBrand}` }
-      aria-label="Third navbar example">DH Odonto</a>
-        <nav >
-           
-              
-                    <Link to={routes.home}>Home</Link>
-                
-               
-                    <Link to={routes.favs}>Favs</Link>
-              
-                
-                    <Link to={routes.contact}>Contact</Link>
-               
-                    <button>☀ 🌙{" "}</button>
-        </nav>
-      </header>
-
-    )
+  const {state,dispatch} = useContextGlobal()
+  return (
+    <header >
+   
+      <nav >
+        <Link to={routes.home}>Home</Link>
+        <Link to={routes.favs}>Favs</Link>
+        <Link to={routes.contact}>Contact</Link>
+        <div>
+          <button onClick={()=>state.theme==="" ? dispatch({type:"dark"}) : dispatch({type:"light"})} style={{background:"black", borderRadius:"6px"}} >🌙</button> 
+        </div> 
+        
+      </nav>
+    </header>
+  );
 }
 
-
-export default Navbar
+export default Navbar;

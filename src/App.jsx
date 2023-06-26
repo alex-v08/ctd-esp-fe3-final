@@ -5,7 +5,8 @@ import Home from './Routes/Home';
 import Favs from './Routes/Favs';
 import Contact from './Routes/Contact';
 import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
+import Footer from './Components/Footer'
+
 
 
 
@@ -25,7 +26,7 @@ import Footer from './Components/Footer';
        <Route path="/contact" element={<Contact/>} />
      </Routes> 
       
-     <Footer/>     
+      
 
        </>
       
