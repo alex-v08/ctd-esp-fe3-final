@@ -5,7 +5,7 @@ import Favs from './Routes/Favs'
 import Home from './Routes/Home'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
-import {useContextGlobal} from "./Components/utils/global.context";
+import {useContextGlobal} from "./utils/global.context";
 
 
 
