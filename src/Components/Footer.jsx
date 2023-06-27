@@ -16,16 +16,16 @@ const Footer = () => {
         <img className="logoFooter" src="/images/DH.png" alt="logo" />
         <ul>
           <li>
-            <img src="/images/ico-facebook.png" alt="logo" />
+            <img src="./images/ico-facebook.png" alt="logo" />
           </li>
           <li>
-            <img src="/images/ico-instagram.png" alt="logo" />
+            <img src="./images/ico-instagram.png" alt="logo" />
           </li>
           <li>
-            <img src="/images/ico-whatsapp.png" alt="logo" />
+            <img src="./images/ico-whatsapp.png" alt="logo" />
           </li>
           <li>
-            <img src="/images/ico-tiktok.png" alt="logo" />
+            <img src="./images/ico-tiktok.png" alt="logo" />
           </li>
         </ul>
       </div>

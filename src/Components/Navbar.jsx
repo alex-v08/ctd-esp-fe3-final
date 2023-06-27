@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar2 from 'react-bootstrap/Navbar';
 import { useContextGlobal } from './utils/global.context';
 
+
 const Navbar = () => {
   const { state, dispatch } = useContextGlobal();
 
