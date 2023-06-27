@@ -16,10 +16,10 @@ const Home = () => {
       console.log(data)
     
     })
-    },[])
+    },[data])
 
     const cardDent = data.map((dent) =>
-    <div class="col-4">
+    <div class="col-3">
     <Card  dent={dent} key={dent.id}/>
     </div>
     );
